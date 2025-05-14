@@ -35,10 +35,9 @@ public class EjerciciosParte1 {
     }
     //4
     public static int finNum4(int[] nums){
-        int cont=0,num=0;
+        int cont=0;
         for(int i=0;i<nums.length;i++){
-            num=nums[i]%10;
-            if(num==4){
+            if(nums[i]%10==4){
                 cont++;
             }
         }
@@ -155,5 +154,6 @@ public class EjerciciosParte1 {
         num1 = numSumaDigitosMax(nums);
         System.out.println(num1);
         scanner.nextLine();
+        scanner.close();
     }
 }

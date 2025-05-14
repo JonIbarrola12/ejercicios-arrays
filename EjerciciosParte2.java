@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class EjerciciosParte2 {
     //1
     public static int diferenciaArray(int[] nums){
-       int max=-1, min=+1000000000;
+       int max=-1, min=1000000000;
        for(int i=0;i<nums.length;i++){
             if(max<nums[i]){
                 max=nums[i];
