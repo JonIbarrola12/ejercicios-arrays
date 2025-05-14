@@ -1,2 +1,2 @@
 javac EjerciciosParte1.java
-java EjerciciosParte1
+java -cp ".;mysql-connector-j-9.3.0.jar" EjerciciosParte1
