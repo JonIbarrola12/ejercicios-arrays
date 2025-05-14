@@ -129,11 +129,15 @@ public class EjerciciosParte2 {
     }
     //12
     public static int[] numUnoEnPosicionNum2(int[] nums, int num1, int num2){
+        int[] arr = new int[nums.length+1];
         for(int i=0; i<nums.length-num2;i++){
-            nums[nums.length-i]=nums[nums.length-(i+1)];
+            arr[nums.length-i]=nums[nums.length-(i+1)];
         }
-        nums[num2]=num1;
-        return nums;
+        arr[num2]=num1;
+        for(int i=0;i<num2;i++){
+            arr[i]=nums[i];
+        }
+        return arr;
     }
 
     public static void main(String[] args) {
@@ -203,12 +207,12 @@ public class EjerciciosParte2 {
         }
         System.out.println();
 
-        System.out.println("Ejercicio 10: ");
-        nums3 = cambiarPorCero(nums1,num1);
-        for(int i=0;i<nums3.length;i++){
-            System.out.print(nums3[i]+" ");
-        }
-        System.out.println();
+        // System.out.println("Ejercicio 10: ");
+        // nums3 = cambiarPorCero(nums1,num1);
+        // for(int i=0;i<nums3.length;i++){
+        //     System.out.print(nums3[i]+" ");
+        // }
+        // System.out.println();
 
         System.out.println("Ejercicio 11: ");
         if(capicua(nums1)){
@@ -223,7 +227,12 @@ public class EjerciciosParte2 {
             System.out.print(nums3[i]+" ");
         }
         System.out.println();
-        scanner.nextLine();
+        
+        
+        System.out.println("\nPresiona Enter para finalizar...");
+        scanner.nextLine(); // ← Esto esperará a que el usuario presione Enter
+
+        scanner.close();
     }
 
 }
