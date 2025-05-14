@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class EjerciciosParte2 {
     //1
     public static int diferenciaArray(int[] nums){
@@ -135,77 +137,93 @@ public class EjerciciosParte2 {
     }
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         int num1 = 2;
         int num2= 5;
         int[] nums1 = {1,6,3,4,6,3,4,8,3,2};
         int[] nums2 = {2,5,3,8,8,0,9,3,4,7};
-
+        System.out.println("Arrays de los ejercicios: ");
+        for (int i=0;i<nums1.length;i++){
+            System.out.print(nums1[i]+ " ");
+        }
+        System.out.println();
+        for (int i=0;i<nums2.length;i++){
+            System.out.print(nums2[i]+ " ");
+        }
+        System.out.println();
+        
+        System.out.println("Ejercicio 1: ");
         int num3 = diferenciaArray(nums1);
         System.out.println(num3);
 
+        System.out.println("Ejercicio 2: ");
         int[] nums3 = arrayInvertido(nums1);
         for(int i=0;i<nums3.length;i++){
             System.out.print(nums3[i]+" ");
         }
         System.out.println();
 
+        System.out.println("Ejercicio 3: ");
         nums3 = arrayImpares(nums1);
         for(int i=0;i<nums3.length;i++){
             System.out.print(nums3[i]+" ");
         }
         System.out.println();
 
+        System.out.println("Ejercicio 4: ");
         nums3 = arrayPares(nums1);
         for(int i=0;i<nums3.length;i++){
             System.out.print(nums3[i]+" ");
         }
         System.out.println();
 
+        System.out.println("Ejercicio 5: ");
         num3 = contNumEnArray(nums1,num1);
         System.out.println(num3);
 
+        System.out.println("Ejercicio 6: ");
         nums3 = sinRepetir(nums1);
         for(int i=0;i<nums3.length;i++){
             System.out.print(nums3[i]+" ");
         }
         System.out.println();
 
-        nums3 = sinRepetir(nums1);
-        for(int i=0;i<nums3.length;i++){
-            System.out.print(nums3[i]+" ");
-        }
-        System.out.println();
-
+        System.out.println("Ejercicio 7: ");
         num3 = numeroQueFalta(nums1);
         System.out.println(num3);
 
+        System.out.println("Ejercicio 8: ");
         double num4 = promedioArray(nums1);
         System.out.println(num4);
 
+        System.out.println("Ejercicio 9: ");
         nums3 = arrayCombinado(nums1,nums2);
         for(int i=0;i<nums3.length;i++){
             System.out.print(nums3[i]+" ");
         }
         System.out.println();
 
+        System.out.println("Ejercicio 10: ");
         nums3 = cambiarPorCero(nums1,num1);
         for(int i=0;i<nums3.length;i++){
             System.out.print(nums3[i]+" ");
         }
         System.out.println();
 
+        System.out.println("Ejercicio 11: ");
         if(capicua(nums1)){
             System.out.println("Es capicua");
         }else{
             System.out.println("No es capicua");
         }
 
+        System.out.println("Ejercicio 12: ");
         nums3 = numUnoEnPosicionNum2(nums1,num1,num2);
         for(int i=0;i<nums3.length;i++){
             System.out.print(nums3[i]+" ");
         }
         System.out.println();
-
+        scanner.nextLine();
     }
 
 }
