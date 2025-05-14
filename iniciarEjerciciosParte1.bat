@@ -1,0 +1,2 @@
+javac EjerciciosParte1.java
+java EjerciciosParte1
